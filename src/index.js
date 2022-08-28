@@ -20,7 +20,7 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
 
-app.use('/api/v1/auth/user', userAuthV1Routes);
+app.use('/api/v1/user/auth', userAuthV1Routes);
 
 app.listen(keys.port || process.env.PORT, () => {
     console.log(`Connected to server in ${keys.nodeENV} on port ${keys.port}`);
